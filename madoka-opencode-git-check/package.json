@@ -1,0 +1,30 @@
+{
+  "name": "madoka-opencode-git-check",
+  "version": "0.3.0",
+  "description": "OpenCode 插件 — 一键扫描、分类、审查并提交代码",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^5.8.3"
+  },
+  "license": "MIT"
+}
